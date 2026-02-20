@@ -15,6 +15,16 @@ function App() {
           ))}
         </div>
       </div>
+
+      {/* Footer globale per stampa PDF (ripetuto magicamente su ogni foglio vettoriale) */}
+      <div className="hidden print:flex fixed bottom-[-15mm] left-0 right-0 h-[10mm] px-16 justify-between items-center text-[10px] font-semibold tracking-widest text-gray-400 uppercase bg-white z-50">
+        <div className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
+          DNAKE Cloud Manuale Utente
+        </div>
+        <span>Pagina <span className="print-page-number"></span></span>
+      </div>
+
       <ScrollToTop />
     </>
   );

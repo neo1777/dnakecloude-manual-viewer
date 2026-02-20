@@ -21,7 +21,7 @@ const ManualPage: React.FC<ManualPageProps> = ({ data }) => {
         <ImageBox images={data.images} />
       </div>
 
-      <div className="w-full px-16 py-8 flex justify-between items-center text-xs font-semibold tracking-widest text-gray-400 uppercase border-t border-gray-50 bg-gray-50/30">
+      <div className="w-full px-16 py-8 flex justify-between items-center text-xs font-semibold tracking-widest text-gray-400 uppercase border-t border-gray-50 bg-gray-50/30 print:hidden">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
           DNAKE Cloud Manuale Utente
