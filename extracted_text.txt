@@ -1,0 +1,3566 @@
+
+
+.
+
+
+
+User Manual
+
+DNAKE Cloud Platform
+
+Contents
+
+
+
+1. Introduction	1
+
+1.1 Introduction	1
+
+1.2 Introduction of some icons	2
+
+1.3 Supported devices and solutions	3
+
+2. Login and Logout	10
+
+2.1 Login and Logout	10
+
+2.2 Forget password	12
+
+3. Personal Center and System Messages	14
+
+3.1 Basic information	14
+
+3.2 Change Password	15
+
+3.3 Login Settings	16
+
+3.4 System Message	17
+
+4. Distributor	18
+
+4.1 Manage the device	18
+
+4.2 Reseller/installer	19
+
+4.3 License Log	23
+
+4.4 My message	23
+
+5. Reseller/Installer	26
+
+5.1 Home page	26
+
+5.2 Property Manager	26
+
+5.3 Site	28
+
+5.4 Device	51
+
+5.5 License Log	62
+
+5.6 Update-Firmware List (OTA)	63
+
+5.7 Update-Upgrade Log (OTA)	63
+
+5.8 My message	64
+
+5.9 Log	66
+
+5.10 Switch to Property Manager	67
+
+5.11 Technical Supporter	68
+
+6. Property Manager	70
+
+6.1 Home Page	70
+
+6.2 Site	73
+
+6.3 Access Control	85
+
+6.4 License Log	97
+
+6.5 Security alarm	98
+
+6.6 My message	99
+
+6.7 Log	100
+
+6.8 Contact Technical Support	103
+
+6.9 Remote Management	104
+
+7. Appendix A:	107
+
+American data center: (https://us-cloud.dnake.com)	107
+
+European data center: (https://eu-cloud.dnake.com)	108
+
+Indian data center: (https://ind-cloud.ss-iot.com/login)	110
+
+SIP or landline supported countries and regions:	111
+
+
+
+1. Introduction
+
+
+
+1.1 Introduction
+
+1. DNAKE Cloud platform has 3 kinds of accounts, Distributor, Sub-distributor（optional）, Reseller/Installer and Property Manager. Different users have unique functions on the platform. Here is the table for you to have a look at the distinctions. 
+
+2. Reseller/Installer can also create sites and switch to sites to manage as a Property Manager.
+
+3. One Property Manager can manage multiple sites.
+
+No.
+
+Distributor & Sub-distributor(optional)
+
+Reseller /Installer
+
+Property Manager
+
+1
+
+System Message
+
+System Message
+
+System Message
+
+2
+
+Personal Center
+
+Personal Center
+
+Personal Center
+
+4
+
+Reseller/Installer
+
+Property Manager
+
+Device (List)
+
+5
+
+/
+
+Project
+
+Apartment
+
+6
+
+/
+
+Device (Management)
+
+Resident (Resident & Access Control)
+
+7
+
+License Log
+
+License Log
+
+License Log
+
+8
+
+/
+
+Update (Firmware List & Update List)
+
+Security Alarm
+
+9
+
+My message
+
+My message
+
+My message
+
+10
+
+/
+
+/
+
+Log
+
+1.2 Introduction of some icons
+
+1. The icons you may see in the platform.
+
+
+
+Edit
+
+
+
+Hide search
+
+
+
+Delete
+
+
+
+Refresh
+
+
+
+Details
+
+
+
+Synchronize All Residents data
+
+
+
+Resent Email
+
+
+
+Resident Details
+
+
+
+Device
+
+
+
+Edit Value-added Services
+
+
+
+License Management
+
+
+
+Renew
+
+
+
+Sync again
+
+
+
+Set as Owner
+
+ 
+
+Replace Device
+
+
+
+Introduction
+
+ 
+
+Access Device Webserver
+
+
+
+
+
+
+
+1.3 Supported devices and solutions
+
+1. We are developing and adding more features to the platform and DNAKE Smart Pro app. Some devices are supported now while some will be supported in the near future. Please refer to the table below for the supported models:
+
+（1）Door Station Without Indoor Monitor
+
+Requirements: The Door Station must be connected to the internet, registered on the SIP server, and added to the platform.
+
+Setup: Select "Without Indoor Monitor" license when creating apartment (Without indoor monitor license will be used).
+
+
+
+Door Station With Indoor Monitor
+
+Requirements: The door station and indoor monitor should both be connected to the internet and added to the platform.
+
+Door Station should support to be registered to SIP server;
+
+Setup: Choose " With Indoor Monitor " license when creating apartment (With indoor monitor license will be used).
+
+
+
+No Door Station, but With Indoor Monitor
+
+Requirements: The indoor monitor should be connected to the internet and added to the platform.
+
+Setup: Select " With Indoor Monitor " license when creating apartment (With indoor monitor license will be used).
+
+Local Network Call (With Indoor Monitor)
+
+Requirements: This configuration operates without an internet connection, using a local network for P2P (peer-to-peer) calls.
+
+User Setup: No specific setup for SIP server registration is needed as the call is local.
+
+No Internet required.
+
+
+
+Public Network Calling (With Indoor Monitor)
+
+Cloud Connectivity: The door station and indoor monitor connects to its designated network and registers to the cloud.
+
+Seamless Communication: Once both devices are connected to the cloud, they can establish calls without the need to be in the same LAN environment.
+
+Flexibility: Devices can operate across different networks, providing greater deployment options.
+
+
+
+2.Support devices
+
+Device type
+
+Model
+
+Door station (SIP Call)
+
+C112
+
+S212
+
+S213K
+
+S213M
+
+S215
+
+S615
+
+S617
+
+S414
+
+Indoor Monitor
+
+E214
+
+E216
+
+E217
+
+A416
+
+E416
+
+H618
+
+Master Station
+
+902C-A
+
+Access Control
+
+AC01
+
+AC02
+
+AC02C
+
+IP Kits
+
+IPK06
+
+IPK07
+
+IPK08
+
+TW Kits
+
+TWK01
+
+TWK02
+
+TWK03
+
+TWK04
+
+Elevator Control Module
+
+EVC-ICC-A5
+
+2. DNAKE provides different solutions. 
+
+With Indoor Monitor: 
+
+Refers to the P2P solution with Indoor Monitor (Indoor Monitor must be installed for each household).
+
+Without Indoor Monitor: 
+
+Refers to the P2P or SIP solution without Indoor Monitor. If you are among the SIP-supported countries and the device you use support SIP solution (e.g., S615 SIP updated with 904D_0_1_1_40_SIPV1_4_21_GA_20231123), the platform will choose SIP solution automatically.
+
+Please refer to Appendix A: SIP or landline supported countries and regions for SIP-supported countries
+
+Value-added Services: 
+
+Refers to some premium services like SIP call and landline feature. This service is based on Door Station Direct Call SIP solution.
+
+Please note that value-added service can’t be taken back if it’s used.
+
+Remote Management:
+
+Enables property managers to use the Smart Pro, ensuring they stay connected while on patrol. With this functionality, security personnel no longer need to worry about missing calls. This enhances communication and allows property managers to provide better services to residents.
+
+
+
+2. Login and Logout
+
+
+
+2.1 Login and Logout
+
+2.1.1 Login
+
+1. log in your account in web browser 
+
+Step 1: Provide your email and information to DNAKE or DNAKE partners to register an account. You will receive account password in your email inbox.
+
+
+
+Step 2: Please enter the platform website and log in with your account. Different regions have different data center. Please go to the URL according to different regions. 
+
+European data center: https://eu-cloud.dnake.com. 
+
+American data center: https://us-cloud.dnake.com. 
+
+Indian data center: https://ind-cloud.dnake.com
+
+Please refer to the appendix A for checking your country or region’s data center.
+
+
+
+2.1.2 Logout
+
+Click your personal account on the right upper corner and log out.
+
+
+
+
+
+2.2 Forget password
+
+1. Recover your password
+
+Step 1: Click Forget Password?
+
+
+
+Step 2: Enter your email and click Next.
+
+
+
+Step 3: The platform will send you an email to change your password. Please check your email inbox.
+
+
+
+
+
+Step 4: Please set a new password according to the rule and try to log in with new password.
+
+
+
+3. Personal Center and System Messages
+
+
+
+3.1 Basic information
+
+1. You can check the details of account you log in. You can find your phone number, email address, role, project, creation time or nickname and so on. You can even change the profile photo.
+
+ 
+
+3.2 Change Password
+
+1. If you want to change password, please click Change Password to edit. 
+
+
+
+3.3 Login Settings
+
+1. It is used to configure whether you need to fill in the verification code when you login the platform. It can help you to protect your account from being stolen. If it's enabled, the platform will send you a verification code to your email (the same with your account) after you click "Log in" on the login page, you should fill in the correct code before login. If it's disabled, you will login directly after you click "Log in".
+
+
+
+
+
+3.4 System Message
+
+1. System message comes from your upstream characters. For example, if you are a reseller, you will receive messages from distributor/sub- distributor and you can also send messages to your downstream characters.
+
+
+
+4. Distributor
+
+4.1 Manage the device
+
+Distributors can now access the Device menu to view devices added by their associated resellers or installers. This feature provides visibility into device distribution while maintaining hierarchical management. 
+
+
+
+The Device menu includes the following details:
+
+Site: The site associated with the device.
+
+Reseller/Installer: The reseller or installer that imported the device.
+
+Device Name
+
+Type
+
+Model
+
+Status
+
+MAC Address
+
+
+
+4.2 Reseller/installer
+
+4.2.1 Add a reseller/installer account
+
+1. Here are the steps to add a reseller/installer account
+
+Step 1: Go to Reseller/installer column and click Add to add a reseller/installer account. 
+
+
+
+Step 2: Fill in reseller/installer’s information. Company name, Email and language are necessary. Please make sure email is right because Email will be reseller/installer’s account. And Password will be sent to this email address.
+
+
+
+4.2.2 Manage reseller/installer account
+
+1. After registering a reseller/installer account, you can edit, delete, check it, and resend the registration email or manage their licenses.
+
+
+
+4.2.3 License Management
+
+1. The license is necessary for the residents to use the app. Every DNAKE Smart Pro app host user needs one license to have the app service. You can find different types of services:
+
+With Indoor Monitor: 
+
+Refers to the P2P solution with Indoor Monitor (Indoor Monitor must be installed for each household).
+
+Without Indoor Monitor: 
+
+Refers to the P2P or SIP solution without Indoor Monitor. If you are among the SIP-supported countries and the device you use support SIP solution, the platform will choose SIP solution automatically.
+
+Please refer to Appendix A: SIP or landline supported countries and regions for SIP-supported countries
+
+Value-added Services: 
+
+Refers to some premium services like SIP call and landline feature. This service is based on Door Station Direct Call SIP solution.
+
+Please note that value-added service can’t be taken back if it’s used.
+
+Remote Management:
+
+Enables property managers to use the Smart Pro, ensuring they stay connected while on patrol. With this functionality, security personnel no longer need to worry about missing calls. This enhances communication and allows property managers to provide better services to residents.
+
+As a distributor, you are allowed to increase or reduce the amounts of different types of services for reseller/installer.
+
+ 
+
+4.3 License Log
+
+1. You can check the amount of license you have and license log.
+
+
+
+4.4 My message
+
+4.4.1 Send messages to reseller/installer
+
+1. Here are the steps to send messages to reseller/installer
+
+Step 1: Go to My message column and click Add to edit a message.
+
+
+
+Step 2: Fill in message title and message content. Choose the recipient and the delivery time.
+
+
+
+Step 3: Click the message. You can check the message detail.
+
+
+
+
+
+
+
+5. Reseller/Installer
+
+
+
+5.1 Home page
+
+Here is the dashboard for tracking the number of sites and devices. Also, the quick operation to create a new community, new single-family home, etc.
+
+
+
+5.2 Property Manager
+
+5.2.1 Add a property manager account
+
+1. Here are the steps to add a property manager account
+
+Step 1: Go to Property Manager column and click Add to add a property manager account.
+
+
+
+Step 2: Fill in property manager’s information. Company name, Email and language are necessary. Please make sure email is right because Email will be property manager’s account. And Password will be sent to this email address.
+
+
+
+5.2.2 Manage Property Manager account
+
+1. After registering a property manager account, you can edit, delete, check it, and resend the registration email.
+
+
+
+5.3 Site
+
+5.3.1 Add a Community
+
+1. Here are the steps to add a community
+
+Step 1: Go to Site column and click New Community to add a new community.
+
+
+
+Step 2: Fill in community information. Community name and Country/Region are necessary. 
+
+Allow Residents Register Face:
+
+It is the face recognition function. If you have Door Station with face recognition function, you can enable it for app users to upload their face data via app.
+
+Remote management:
+
+It is used to configure whether the property manager is allowed to manage Villa Station as an access control device. If enabled, the property manager will see the device when creating access control. If disabled, the property manager will not have the permission to create access control for Villa Station.
+
+Sync Resident to Phonebook by default:
+
+It's used to configure whether "Sync to Phonebook on device" is enabled on the resident setting page of this site. If enabled，"Sync to Phonebook on device" will be enabled by default. Otherwise，it will be disabled by default.
+
+Report Device Anomalies:
+
+It is used to configure whether to send a report to the administrator when an abnormality occurs on the device.
+
+
+
+5.3.2 Manage Community
+
+1. After creating a community, you can edit, delete, check it and auto deploy log, or click the Site Management icon or Name of community to jump to Site management page to manage devices, apartments and residents of this community.
+
+
+
+5.3.3 License Management
+
+1. The license is necessary for the residents to use the app. Every DNAKE Smart Pro app host user needs one license to have the app service. You can find different types of services:
+
+With Indoor Monitor: 
+
+Refers to the P2P solution with Indoor Monitor (Indoor Monitor must be installed for each household).
+
+Without Indoor Monitor: 
+
+Refers to the P2P or SIP solution without Indoor Monitor. If you are among the SIP-supported countries and the device you use support SIP solution, the platform will choose SIP solution automatically.
+
+Please refer to Appendix A: SIP or landline supported countries and regions for SIP-supported countries
+
+Value-added Services: 
+
+Refers to some premium services like SIP call and landline feature. This service is based on Door Station Direct Call SIP solution.
+
+Please note that value-added service can’t be taken back if it’s used.
+
+As a reseller/installer, you are allowed to increase or reduce the amounts of different types of services for sites.
+
+
+
+5.3.4 Device and Resident Management
+
+Within the left - side Community classification module, users can add "New Building" to enter basic information of newly added buildings and "Public Areas" to manage shared space information, including the main entrance, laundry room, delivery room and parking lot.
+
+1. Here are the steps to create a community
+
+Step 1: Click New Public Area to create a new public area or directly rename the existed public area. Then click the Public Area you’ve created to manage the devices inside.
+
+Step 2: Click Add Device, then select or fill in the device basic information like device type, MAC address and device name, etc. Then click save to finish it.
+
+
+
+Step 3: Go back to site management page and click New building to add a new building. Then select the building number and fill in the building name. 
+
+Step 4: Click the building you’ve created and click Add Apartment to add a new apartment. Apartment number and license selection are necessary when creating a new apartment. 
+
+Step 5: You can select to add a new resident on the same page. 
+
+
+
+Noted: Without Indoor Monitor license must be selected when there is no indoor monitor online on the cloud, and that With Indoor Monitor license should be chosen when there is indoor monitor available. For scenarios involving no calls, such as learning or testing purposes, "Not use" can be selected. Once a license With or Without Indoor Monitor is selected, the choice cannot be modified. If modification is required, the original apartment (apt) must be deleted and re-added. However, deleting the apartment will result in the removal of all residents within the corresponding room.
+
+Step 5: Click Device, then Add Device to add a new device. 
+
+
+
+
+
+Noted: Indoor Monitor can receive call via SIP ServerThe indoor monitor support received the call via local network and SIP server. The benefit of SIP Server is that door station and indoor monitor support public network calling, allowing communication between devices even when they are not within the same local area network (LAN). Devices can operate across different networks, providing greater deployment options.
+
+Step 6: Click Resident, then Add Resident to add a new resident. 
+
+
+
+Noted:  The cloud platform now supports using a single email account to join multiple households. The same account can act as the owner or a family member in up to 20 different households.
+
+Additionally, a single email account can serve both as a household owner or member and as a community property manager at the same time.
+
+
+
+
+
+
+
+5.3.5 QR code for tenant self-registration
+
+The system supports generating a unique QR code for each tenant. By simply scanning the QR code, tenants can independently complete the APP registration, bind their resident information, and associate with the devices—without requiring the property manager to manually enter email addresses or create accounts. 
+
+1. Here are the steps to generate a QR code for tenant self-registration
+
+Step 1: Go to Site and create a community. Fill in the necessary information including name, country/region. And enable Register Account in the APP.
+
+ 
+
+Step 2: Go to the site created and create a new building.
+
+
+
+Step 3: Select the building created and create a new apartment. And after selecting No Use or Without Indoor Monitor, Generate Apartment QR Code will be shown. Enable it and set the scannable times.
+
+
+
+Step 4:  Click details of dedicated apartment, the QR code will be shown. It’s allowed to download the QR code.
+
+
+
+
+
+5.3.6 Landline
+
+1. Here are the steps to enable landline feature
+
+Step 1: Make sure the device added can support landline feature. 
+
+Step 2: Navigate to Site , click Community, select the desired community, then choose the corresponding building to check the apartments. 
+
+Step 3: Click Edit to open the settings for the apartment you want to
+
+configure landline 
+
+Step 4: Enable Value-added Services, then select the call type and fill in the phone number you want to use
+
+
+
+Add a Single-Family
+
+1. Here are the steps to create a single-family
+
+Step 1: Click Single-Family, then New Single-Family to add a new single-family.
+
+
+
+
+
+Step 2: Click Single-Family, then New Single-Family to add a new single-family. Name, country/region and license selection are necessary. You can select to add device to this site on the same page.
+
+
+
+Step 3: Click Device, then Add Device to add a new device to this site.
+
+
+
+
+
+Step 4: Click Resident, then Add Resident to add a new resident.
+
+
+
+Report Device Anomalies
+
+1. It is used to send a report to the administrator’s email when an abnormality occurs on the device.
+
+
+
+
+
+5.4 Device
+
+5.4.1 Add Device
+
+5.4.1.1 Add in batch
+
+1. Here are the steps to add devices in batch
+
+Step 1: Go to Device column and click Template Download to fill in the devices’ information. 
+
+
+
+Step 2: Click Add Device, Add in batch, then upload the template to add devised to this site.
+
+
+
+Noted: Indoor Monitor can receive call via SIP ServerThe indoor monitor support received the call via local network and SIP server. The benefit of SIP Server is that door station and indoor monitor support public network calling, allowing communication between devices even when they are not within the same local area network (LAN). Devices can operate across different networks, providing greater deployment options.
+
+
+
+5.4.1.2 Add one by one
+
+Step 1: Step 1: Go to Device column and click Add Device to add a device. 
+
+Step 2: Click Add one by one.
+
+
+
+Step 3: Select the site and fill in device’s information. Device Type, MAC address, device number and device name should be filled in or chosen according to your device and needs. All of the other settings will be synced to your device.
+
+
+
+Noted: When adding devices to Community, the Applying Area option allows you to specify whether the device is Private or Public.
+
+Private: The device cannot be added to the Access Rule by the property manager. It will not appear in the device list under Access Rule.
+
+Public: Vice versa.
+
+5.4.1.3 Automatic Device Deployment to the Cloud Platform
+
+Step 1: Create a project on the cloud platform. For detailed instructions, refer to section 5.3.1.
+
+Step 2: Enter the SiteID in the designated field and enable "Automatic Deployment" by toggling the switch. Then, fill in the Building No, Unit No, and Room No fields accordingly.
+
+5.4.2 Replace device
+
+It’s only supported to replace device with same model.
+
+1. Here are the steps to replace a device
+
+Step 1: Go to Device column and click Replace Device to replace this device. 
+
+
+
+Step 2: Fill in MAC address of the new same-model device. You can also change its network. 
+
+Step 3: The platform will check the status of the device.
+
+
+
+Step 4: After that, the data will be transferred to the new one.
+
+
+
+5.4.3 Access device webserver
+
+1. Here are the steps to access device webserver
+
+Step 1: Make sure the device firmware is the latest with FRP service.
+
+Step 2: Visit device’s config page with its IP address locally. The default account is admin and password is 123456.
+
+Step 3: Go to System > Remote Access to allow this feature.
+
+
+
+Step 4: Go back to cloud platform’s Device > More > Access Device Webserver
+
+
+
+Step 5: Click Open to browse. The device webserver will open in a new window. Access will remain valid for 30 minutes.
+
+
+
+5.4.4 Device Relay Setting
+
+Step 1: Go to Device column and click More > Relay Setting behind the device to configure the relay.
+
+
+
+Step 2: Select the replays you need and configure the relay and dry contact by yourself. When residents log in to Smart Pro and click the unlocking button of the entrance device, relays with inactive status in the relay list will be hidden. When there is only one relay in an "active" state on the entrance device, clicking the unlocking button will skip the relay list selection and directly unlock the door.
+
+
+
+5.4.5 Reboot the device.
+
+Step 1: Go to Device column and click More > Reboot behind the device to configure the relay.
+
+
+
+5.4.6 Enable Daylight Saving Time 
+
+Step 1: Click More, then Edit.
+
+
+
+Step 2: Enable daylight saving time.
+
+
+
+5.5 License Log
+
+1. You can check the amount of license you have and license log.
+
+
+
+5.6 Update-Firmware List (OTA)
+
+1. Choose the corresponding Device Type, Model and Firmware Version according to the device. After choosing, the devices can be selected to upgrade and Upgrade Time can also be set.
+
+
+
+5.7 Update-Upgrade Log (OTA)
+
+1. The log of upgrade.
+
+
+
+5.8 My message
+
+5.8.1 Send messages to property manager
+
+1. Here are the steps to send messages to property manager
+
+Step 1: Go to My message column and click Add to edit a message.
+
+
+
+Step 2: Fill in message title and message content. Choose the recipient and the delivery time.
+
+
+
+Step 3: Click the message. You can check the message detail.
+
+ 
+
+5.9 Log
+
+5.9.1 Configuration log
+
+1. You can check configuration logs of this community’s devices. You can view the records for recent one month.
+
+
+
+5.9.2 Device tasks
+
+1. Here records operation logs related to device management, including deletion and replacement activities, ensuring traceability and accountability.
+
+5.10 Switch to Property Manager
+
+1. Please make sure you linked the project to this Reseller/Installer account when creating it. After doing so, you may find you can switch to manage the project on the upper right corner. You can also switch back to Reseller/Installer. 
+
+Noted: In our system, a site can be defined as a single-family house or a community. A single-family house normally does not have property management, which means it cannot be managed under a property management account. By contrast, a community site is managed by property manager, so when we switch to the property management account, only community sites can be managed.
+
+5.11 Technical Supporter
+
+1. Here are the steps to create the contact for Property Manager to seek technical support.
+
+Step 1: Go to Account > Technical Supporter.
+
+ 
+
+Step 1: Fill in the information about the technical support.
+
+
+
+
+
+6. Property Manager
+
+
+
+6.1 Home Page
+
+The dashboard provides an overview of the system’s main functions.
+
+6.1.1 Security alarm
+
+1. The Active Security Alarm section displays real-time alarm information, including the location, the device that triggered the alarm, and the corresponding alarm zone. You can click more to check more alarms. 
+
+
+
+6.1.2 Quick Operation
+
+1. Quick Access panel allows administrators to quickly add new residents, create new access rules, or post announcements and notifications to residents.
+
+
+
+6.1.3 Information
+
+This area gives a summary of system resources, showing the number of connected devices, configured buildings, registered apartments, and residents.
+
+
+
+6.1.3 Access Analysis
+
+Here administrators can view whether an entry attempt was successful or failed, check snapshots taken during the attempt, identify the resident and their apartment, and see details such as the device used, the unlocking method, the result, and the exact time of the event. The system displays up to the latest ten records for review, and it also provides daily, weekly, and monthly reports for statistical analysis.
+
+
+
+6.1.4 Call Analysis
+
+Here presents statistics on communication activities. It records the total call duration and allows the data to be viewed by day, week, or month, giving administrators insight into system usage. 
+
+
+
+
+
+6.2 Site
+
+6.2.1 Device management
+
+6.2.1.1 Synchronize all residents’ data
+
+1. If it failed to synced, you can click it to sync manually. 
+
+6.2.1.2 Resident details
+
+1. The configuration items related to video service and re-synchronize failed apartments have been centralized and integrated into the editing page of the resident details.
+
+
+
+6.2.2 Apartment management
+
+6.2.2.1 Resident
+
+Click the Resident icon to access the Resident module, where you can view and manage all users within the same Building, Unit, or Apartment.
+
+
+
+6.2.2.2 Details
+
+The Apartment Details section provides an overview of the selected apartment, showing its Building, Unit, and Apartment numbers, the number of family members, and service-related settings such as video permission, value-added services, call options, and video service status.
+
+
+
+6.2.2.3 Edit
+
+Here you can modify the apartment’s video service settings for the residents’ app account. Unlock permission for each device can also be granted or cancelled for every app account under this apartment. 
+
+
+
+6.2.3 Resident management
+
+6.2.3.1 Add a new resident
+
+1. Here are the steps to create a new resident
+
+Step 1: Go to the Site column and select the desired building, then click Resident and choose Add Resident to add a new resident.
+
+
+
+Step 2: Select the apartment no., and enter the name, email, and Optional settings include phone, syncing to the door station phonebook, card and pin assignment. 
+
+
+
+
+
+Noted: Residents can upload Face ID on the Smart Pro APP. (Reller/Installer needs to enable Register Face ID in the APP function when creating sites or editing existed one. For detailed instructions, refer to section 5.3.1 and 5.3.2)
+
+2. Here are the steps to import residents
+
+Step 1: Go to the Site column and select the desired building, then click Resident and choose Import Residents to import residents.
+
+
+
+Step 2: Click to download template to download the template to fill in the necessary information
+
+
+
+Step 3: Click Select .scv file to upload the file and click Import to import the cards information.
+
+
+
+
+
+6.2.3.2 Add cards
+
+1. Here are the steps to add a new card for dedicated resident
+
+Step 1: Go to the Site column and select the desired building, then choose Resident and click Edit to add a new card for a dedicated resident.
+
+
+
+Step 2: Select the COM port, then click Start Read (ensure the card reader is connected and drivers are installed).
+
+
+
+Noted: Compatible Mode is used when you read cards by card reader, while Full Card No. Mode is used when you need to input full card number.
+
+Here are the steps to import cards for residents
+
+Step 1: Go to the Site column and select the desired building, then choose Resident and click Import Cards to import cards for residents
+
+
+
+Step 2: Click Click to download template to download the template to fill in the necessary information
+
+
+
+Step 3: Click Select .scv file to upload the file and click Import to import the cards information.
+
+
+
+6.2.3.3 Add Pin code
+
+1. Here are the steps to add a new card for dedicated resident
+
+Step 1: Go to the Site column and select the desired building, then choose Resident and click Edit to add a new Pin code for a dedicated resident.
+
+
+
+Step 2: Select the generation mode, generate the Pin code and click Save to save it.
+
+
+
+
+
+6.2.3.4 Export all residents
+
+Go to the Site column and select the desired building, then choose Resident and click Export All Residents to export all residents
+
+
+
+6.3 Access Control
+
+6.3.1 Person
+
+You can add access permissions, such as facial recognition and card access, for different roles on the cloud platform. The three roles are staff, tenant, visitor, and customized. To assign permissions, simply click Add under each role.
+
+
+
+6.3.1.1 Staff
+
+Step 1: Enter the name and any Remarks in the information section.
+
+Step 2: Upload their face image, add a card by a card reader or card number and generate a PIN code. You can choose whether to generate a QR code for unlocking.
+
+Step 3: Set up specific Access Rules for each staff member.
+
+ 
+
+6.3.1.2 Tenant
+
+Step 1: Enter the name, Building/Unit/Apartment, and any information in the information section.
+
+Step 2: Upload their face image, add a card by a card reader or card number and generate a PIN code. You can choose whether to generate a QR code for unlocking.
+
+Step 3: Set up specific Access Rules for each tenant members. Be sure to specify the validity period for these rules and choose a frequency. The available frequency options are: Never, Daily, Weekly. Additionally, assign the relevant devices to each Access Rule.
+
+With the new Additional Access Rule feature, you can now associate existing Access Rules with the tenant instead of creating a new rule from scratch. This allows for more flexible and efficient access management.
+
+
+
+
+
+6.3.1.3 Visitor
+
+Step 1: Enter the name and any Remarks in the information section.
+
+Step 2: Upload their face image, add a card by a card reader or card number and generate a PIN code. You can choose whether to generate a QR code for unlocking.
+
+Step 3: Set up specific Access Rules for each visitor member. Be sure to specify the validity period for these rules and choose a frequency. The available frequency options are: Never, Daily, Weekly.
+
+
+
+
+
+6.3.1.4 Customized
+
+Step 1: Enter the name and any Remarks in the information section.
+
+Step 2: Upload their face image, add a card by a card reader or card number and generate a PIN code. You can choose whether to generate a QR code for unlocking.
+
+Step 3: Set up specific Access Rules for each staff member.
+
+
+
+
+
+6.3.2 Access Rule
+
+The Access Rule Type provides two options: Normal and Free Access. The Normal rule is used to control access by defining which users are allowed to unlock specific doors within designated time periods, while the Free Access rule allows all users to unlock the specified doors freely during the configured time periods. 
+
+You can create custom Access Rules that can be applied to Staff, Tenants, Visitors, and Customized.
+
+6.3.2.1 Normal
+
+Here are the steps to configure normal access rule
+
+Step 1: Go to the Access Control column and choose Access Rule, then click Create to add an access rule.
+
+
+
+Step 2: Fill in the group name, select the repeat option (Never, Daily, or Weekly), set the validity period, and link the specified devices and people to the access rule. （Rule type is normal by default）
+
+
+
+6.3.2.2 Free Access
+
+Here are the steps to configure free access rule
+
+Step 1: Go to the Access Control column and choose Access Rule, then click Create to add an access rule.
+
+
+
+Step 2: Fill in the group name, select the repeat option (Never, Daily, or Weekly), select the free access, set the validity period, and link the specified devices to the access rule. 
+
+
+
+6.3.3 Delivery Passcode
+
+The cloud platform allows you to create a Delivery Code for couriers. When the courier arrives, they enter the Delivery Code, select the resident, and input the number of packages. The corresponding resident will then receive a package notification in their app. (It only supports S617 right now and will support more devices in the future.)
+
+Step 1: Go to the Site column and select the desired community, then click desired building and choose Device. Then edit S617 to enable the “Delivery”.
+
+
+
+Step 2: Go to community under the property manager, Click Access Control>Person, click Delivery and then Add to add a delivery code for couriers. 
+
+Step 3: Enter a Delivery Name and generate a Delivery Code for the courier. Then, assign the relevant Access Rule to this delivery.
+
+
+
+Step 4: Go to device, then click Delivery
+
+
+
+Step 5: Enter the delivery code.
+
+
+
+Step 6: Send a message to notify the resident that their package has arrived. The notification will appear in Smart Pro.
+
+
+
+6.4 License Log
+
+1. You can check the amount of license you have and license log.
+
+
+
+6.5 Security alarm
+
+1. You can receive security alarms sending from this community’s Indoor Monitors. You can view the records for recent one month.
+
+
+
+6.6 My message
+
+6.6.1 Send messages to resident
+
+1. Here are the steps to send messages to resident
+
+Step 1: Go to My message column and click Add to edit a message.
+
+
+
+Step 2: Fill in message title and message content. Choose the recipient and the delivery time.
+
+
+
+Step 3: Click the message. You can check the message detail.
+
+
+
+6.7 Log
+
+6.7.1 Call log
+
+1. You can check call logs of this community’s devices. You can view the records for recent one month.
+
+
+
+6.7.2 Unlock log
+
+1. You can check unlock logs of this community’s devices. You can view the records for recent one month.
+
+
+
+6.7.3 Configuration log
+
+1. You can check configuration logs of this community’s devices. You can view the records for recent one month.
+
+
+
+6.7.4 Elevator log
+
+1. You can check elevator log if you have installed DNAKE Elevator Control Module. You can view the records for recent one month.
+
+
+
+6.8 Contact Technical Support
+
+1. Property Manager can click Contact Installer to check the information about the technical support. Please make sure your Reseller/Installer set it up before.
+
+
+
+6.9 Remote Management
+
+Enables property managers to use the Smart Pro, ensuring they stay connected while on patrol. With this functionality, security personnel no longer need to worry about missing calls. This enhances communication and allows property managers to provide better services to residents.
+
+Step 1: Log in to the installer account, go to the Site column and navigate to the desired site, then click Edit to enable Remote Management.
+
+
+
+Step 2: Log in to the Property Manager account, navigate to the Remote Management section, and click Add to create a Property Manager account for the app.
+
+
+
+Step 3: Enter the first name, last name, email address, and select the preferred language. You will then receive a registration email.
+
+
+
+Noted: The Remote Management feature will not appear in the menu by default. To make it available, log in to the installer account, navigate to the Site, and enable the Remote Management feature. A valid license is required to activate this feature.
+
+7. Appendix A:
+
+American data center: (https://us-cloud.dnake.com)
+
+Country code
+
+Country or region
+
+Country code
+
+Country or region
+
+1
+
+United States
+
+95
+
+Myanmar
+
+1
+
+Canada
+
+239
+
+São Tomé and Príncipe
+
+51
+
+Peru
+
+245
+
+Guinea-Bissau
+
+52
+
+Mexico
+
+246
+
+British Indian Ocean Territory
+
+54
+
+Argentina
+
+500
+
+Falkland Islands
+
+55
+
+Brazil
+
+502
+
+Guatemala
+
+56
+
+Chile
+
+591
+
+Bolivia
+
+57
+
+Colombia
+
+593
+
+Ecuador
+
+58
+
+Venezuela
+
+594
+
+French Guiana
+
+60
+
+Malaysia
+
+595
+
+Paraguay
+
+62
+
+Indonesia
+
+597
+
+Suriname
+
+63
+
+Philippines
+
+598
+
+Uruguay
+
+64
+
+New Zealand
+
+670
+
+Timor-Leste
+
+66
+
+Thailand
+
+672
+
+Norfolk Island
+
+81
+
+Japan
+
+674
+
+Nauru
+
+82
+
+Republic of Korea
+
+675
+
+Papua New Guinea
+
+84
+
+Vietnam
+
+677
+
+Solomon Islands
+
+1
+
+United States
+
+95
+
+Myanmar
+
+1
+
+Canada
+
+239
+
+São Tomé and Príncipe
+
+51
+
+Peru
+
+245
+
+Guinea-Bissau
+
+52
+
+Mexico
+
+246
+
+British Indian Ocean Territory
+
+54
+
+Argentina
+
+500
+
+Falkland Islands
+
+55
+
+Brazil
+
+502
+
+Guatemala
+
+56
+
+Chile
+
+591
+
+Bolivia
+
+57
+
+Colombia
+
+593
+
+Ecuador
+
+58
+
+Venezuela
+
+594
+
+French Guiana
+
+
+
+European data center: (https://eu-cloud.dnake.com)
+
+Country code
+
+Country or region
+
+Country code
+
+Country or region
+
+7
+
+Russia
+
+241
+
+Gabon
+
+20
+
+Egypt
+
+242
+
+Congo
+
+27
+
+South Africa
+
+243
+
+Congo (DRC)
+
+30
+
+Greece
+
+244
+
+Angola
+
+31
+
+Netherlands
+
+248
+
+Seychelles
+
+32
+
+Belgium
+
+250
+
+Rwanda
+
+33
+
+France
+
+251
+
+Ethiopia
+
+34
+
+Spain
+
+252
+
+Somalia
+
+36
+
+Hungary
+
+253
+
+Djibouti
+
+39
+
+Italy
+
+254
+
+Kenya
+
+40
+
+Romania
+
+255
+
+Tanzania
+
+41
+
+Switzerland
+
+256
+
+Uganda
+
+43
+
+Austria
+
+257
+
+Burundi
+
+44
+
+United Kingdom
+
+258
+
+Mozambique
+
+45
+
+Denmark
+
+260
+
+Zambia
+
+46
+
+Sweden
+
+261
+
+Madagascar
+
+47
+
+Norway
+
+262
+
+Mayotte
+
+48
+
+Poland
+
+263
+
+Zimbabwe
+
+49
+
+Germany
+
+264
+
+Namibia
+
+61
+
+Australia
+
+265
+
+Malawi
+
+65
+
+Singapore
+
+266
+
+Lesotho
+
+90
+
+Turkey
+
+267
+
+Botswana
+
+92
+
+Pakistan
+
+268
+
+Swaziland
+
+93
+
+Afghanistan
+
+269
+
+Comoros
+
+94
+
+Sri Lanka
+
+291
+
+Eritrea
+
+212
+
+Morocco
+
+297
+
+Aruba
+
+213
+
+Algeria
+
+298
+
+Faroe Islands
+
+216
+
+Tunisia
+
+299
+
+Greenland
+
+218
+
+Libya
+
+350
+
+Gibraltar
+
+220
+
+The Gambia
+
+351
+
+Portugal
+
+221
+
+Senegal
+
+352
+
+Luxembourg
+
+222
+
+Mauritania
+
+353
+
+Ireland
+
+223
+
+Mali
+
+354
+
+Iceland
+
+224
+
+Guinea
+
+355
+
+Albania
+
+225
+
+Côte d’Ivoire
+
+356
+
+Malta
+
+226
+
+Burkina Faso
+
+357
+
+Cyprus
+
+227
+
+Niger
+
+358
+
+Finland
+
+228
+
+Togo
+
+359
+
+Bulgaria
+
+229
+
+Benin
+
+370
+
+Lithuania
+
+230
+
+Mauritius
+
+371
+
+Latvia
+
+231
+
+Liberia
+
+372
+
+Estonia
+
+232
+
+Sierra Leone
+
+373
+
+Moldova
+
+233
+
+Ghana
+
+374
+
+Armenia
+
+234
+
+Nigeria
+
+375
+
+Belarus
+
+235
+
+Chad
+
+376
+
+Andorra
+
+236
+
+Central African Republic
+
+377
+
+Monaco
+
+237
+
+Cameroon
+
+378
+
+San Marino
+
+238
+
+Cabo Verde
+
+379
+
+Vatican City
+
+240
+
+Equatorial Guinea
+
+380
+
+Ukraine
+
+381
+
+Serbia
+
+995
+
+Georgia
+
+382
+
+Montenegro
+
+996
+
+Kyrgyzstan
+
+385
+
+Croatia
+
+998
+
+Uzbekistan
+
+386
+
+Slovenia
+
+1242
+
+Bahamas
+
+387
+
+Bosnia and Herzegovina
+
+1246
+
+Barbados
+
+389
+
+Macedonian
+
+1264
+
+Anguilla
+
+420
+
+Czech Republic
+
+1268
+
+Antigua and Barbuda
+
+421
+
+Slovakia
+
+1284
+
+British Virgin Islands
+
+423
+
+Liechtenstein
+
+1340
+
+U.S. Virgin Islands
+
+501
+
+Belize
+
+1345
+
+Cayman Islands
+
+503
+
+El Salvador
+
+1441
+
+Bermuda
+
+504
+
+Honduras
+
+1473
+
+Grenada
+
+505
+
+Nicaragua
+
+1649
+
+Turks and Caicos Islands
+
+506
+
+Costa Rica
+
+1664
+
+Montserrat
+
+507
+
+Panama
+
+1670
+
+Northern Mariana Islands
+
+508
+
+Saint Pierre and Miquelon
+
+1671
+
+Guam
+
+509
+
+Haiti
+
+1684
+
+American Samoa
+
+590
+
+Saint Martin
+
+1758
+
+Saint Lucia
+
+592
+
+Guyana
+
+1767
+
+Dominica
+
+596
+
+Martinique
+
+1784
+
+Saint Vincent and the Grenadines
+
+673
+
+Brunei
+
+1868
+
+Trinidad and Tobago
+
+676
+
+Tonga
+
+
+
+
+
+679
+
+Fiji
+
+
+
+
+
+680
+
+Palau
+
+
+
+
+
+681
+
+Wallis and Futuna
+
+
+
+
+
+685
+
+Samoa
+
+
+
+
+
+687
+
+New Caledonia
+
+
+
+
+
+688
+
+Tuvalu
+
+
+
+
+
+689
+
+French Polynesia
+
+
+
+
+
+691
+
+Federated States of Micronesia
+
+
+
+
+
+692
+
+Marshall Islands
+
+
+
+
+
+855
+
+Cambodia
+
+
+
+
+
+856
+
+Laos
+
+
+
+
+
+880
+
+Bangladesh
+
+
+
+
+
+960
+
+Maldives
+
+
+
+
+
+961
+
+Lebanon
+
+
+
+
+
+962
+
+Jordan
+
+
+
+
+
+964
+
+Iraq
+
+
+
+
+
+965
+
+Kuwait
+
+
+
+
+
+966
+
+Saudi Arabia
+
+
+
+
+
+967
+
+Yemen
+
+
+
+
+
+968
+
+Oman
+
+
+
+
+
+971
+
+United Arab Emirates
+
+
+
+
+
+972
+
+Israel
+
+
+
+
+
+973
+
+Bahrain
+
+
+
+
+
+974
+
+Qatar
+
+
+
+
+
+975
+
+Bhutan
+
+
+
+
+
+976
+
+Mongolia
+
+
+
+
+
+977
+
+Nepal
+
+
+
+
+
+992
+
+Tajikistan
+
+
+
+
+
+993
+
+Turkmenistan
+
+
+
+
+
+994
+
+Azerbaijan
+
+
+
+
+
+Indian data center: (https://ind-cloud.ss-iot.com/login)
+
+Country code
+
+Country or region
+
+91
+
+Indian
+
+
+
+
+
+SIP or landline supported countries and regions:
+
+Country
+
+SIP Call (APP)
+
+Landline (Phone)
+
+Peru
+
+√
+
+√
+
+Mexico
+
+√
+
+√
+
+Argentina
+
+√
+
+√
+
+Brazil
+
+√
+
+√
+
+Chile
+
+√
+
+√
+
+Columbia
+
+√
+
+√
+
+Venezuela
+
+√
+
+√
+
+Falkland Islands
+
+√
+
+√
+
+Guatemala
+
+√
+
+√
+
+Bolivia
+
+√
+
+√
+
+Ecuador
+
+√
+
+√
+
+French Guyana
+
+√
+
+√
+
+Paraguay
+
+√
+
+√
+
+Suriname
+
+√
+
+√
+
+Uruguay
+
+√
+
+√
+
+Nauru
+
+√
+
+√
+
+Cook Islands
+
+√
+
+√
+
+Niue Island
+
+√
+
+√
+
+Kiribati
+
+√
+
+√
+
+USA
+
+√
+
+√
+
+Canada
+
+√
+
+√
+
+Puerto Rico
+
+√
+
+√
+
+Bahamas
+
+√
+
+√
+
+Belize
+
+√
+
+√
+
+El Salvador
+
+√
+
+√
+
+Honduras
+
+√
+
+√
+
+Nicaragua
+
+√
+
+√
+
+Costa Rica
+
+√
+
+√
+
+Panama
+
+√
+
+√
+
+Saint Pierre
+
+√
+
+Not Support
+
+Haiti
+
+√
+
+√
+
+Guadeloupe
+
+√
+
+√
+
+Guyana
+
+√
+
+√
+
+Martinique
+
+√
+
+√
+
+Aruba
+
+√
+
+√
+
+Tuvalu
+
+√
+
+√
+
+Greenland
+
+√
+
+√
+
+Virgin Islands
+
+√
+
+√
+
+Anguilla
+
+√
+
+√
+
+Saint Lucia
+
+√
+
+Not Support
+
+Barbados
+
+√
+
+√
+
+Jamaica
+
+√
+
+√
+
+Hong Kong, China
+
+√
+
+√
+
+Macao China
+
+√
+
+√
+
+Taiwan, China
+
+√
+
+√
+
+Malaysia
+
+√
+
+√
+
+Indonesia
+
+√
+
+√
+
+Philippines
+
+√
+
+√
+
+Thailand
+
+√
+
+√
+
+Japan
+
+√
+
+√
+
+Korea
+
+√
+
+√
+
+Vietnam
+
+√
+
+√
+
+Myanmar
+
+√
+
+√
+
+Timor-Leste
+
+√
+
+√
+
+Singapore
+
+√
+
+√
+
+Sri Lanka
+
+√
+
+√
+
+Brunei
+
+√
+
+√
+
+Cambodia
+
+√
+
+√
+
+Laos
+
+√
+
+√
+
+Bangladesh
+
+√
+
+√
+
+Maldives
+
+√
+
+√
+
+Bhutan
+
+√
+
+√
+
+Mongolia
+
+√
+
+√
+
+Nepal
+
+√
+
+√
+
+India
+
+√
+
+√
+
+Russia
+
+√
+
+√
+
+UK
+
+√
+
+√
+
+Germany
+
+√
+
+√
+
+Italy
+
+√
+
+√
+
+France
+
+√
+
+√
+
+Greece
+
+√
+
+√
+
+Netherlands
+
+√
+
+√
+
+Belgium
+
+√
+
+√
+
+Spain
+
+√
+
+√
+
+Hungary
+
+√
+
+√
+
+Romania
+
+√
+
+√
+
+Switzerland
+
+√
+
+√
+
+Austria
+
+√
+
+√
+
+Denmark
+
+√
+
+√
+
+Sweden
+
+√
+
+√
+
+Norway
+
+√
+
+√
+
+Poland
+
+√
+
+√
+
+San Marino
+
+√
+
+√
+
+Hungary
+
+√
+
+√
+
+Yugoslavia
+
+√
+
+√
+
+Gibraltar
+
+√
+
+√
+
+Portugal
+
+√
+
+√
+
+Luxembourg
+
+√
+
+√
+
+Ireland
+
+√
+
+√
+
+Iceland
+
+√
+
+√
+
+Albania
+
+√
+
+√
+
+Malta
+
+√
+
+√
+
+Finland
+
+√
+
+√
+
+Bulgaria
+
+√
+
+√
+
+Lithuania
+
+√
+
+√
+
+Latvia
+
+√
+
+√
+
+Estonia
+
+√
+
+√
+
+Moldova
+
+√
+
+√
+
+Andorra
+
+√
+
+√
+
+Ukraine
+
+√
+
+√
+
+Croatia
+
+√
+
+√
+
+Slovenia
+
+√
+
+√
+
+BiH
+
+√
+
+√
+
+Macedonia
+
+√
+
+√
+
+Czech Republic
+
+√
+
+√
+
+Slovakia
+
+√
+
+√
+
+Liechtenstein
+
+√
+
+√
+
+Faroe Islands
+
+√
+
+√
+
+Monaco
+
+√
+
+√
+
+Palestine
+
+√
+
+√
+
+Sao Tome
+
+√
+
+√
+
+Principe
+
+√
+
+√
+
+Guinea-Bissau
+
+√
+
+Not Support
+
+Tajikistan
+
+√
+
+√
+
+Türkiye
+
+√
+
+√
+
+Pakistan
+
+√
+
+√
+
+Afghanistan
+
+√
+
+√
+
+Armenia
+
+√
+
+√
+
+Lebanon
+
+√
+
+√
+
+Jordan
+
+√
+
+√
+
+Iraq
+
+√
+
+√
+
+Kuwait
+
+√
+
+√
+
+Saudi Arabia
+
+√
+
+√
+
+Yemen
+
+√
+
+√
+
+Oman
+
+√
+
+√
+
+United Arab Emirates
+
+√
+
+√
+
+Israel
+
+√
+
+√
+
+Bahrain
+
+√
+
+√
+
+Qatar
+
+√
+
+√
+
+Turkmenistan
+
+√
+
+√
+
+Azerbaijan
+
+√
+
+√
+
+Georgia
+
+√
+
+√
+
+Kyrgyzstan
+
+√
+
+√
+
+Uzbekistan
+
+√
+
+√
+
+Cyprus
+
+√
+
+√
+
+Egypt
+
+√
+
+√
+
+South Africa
+
+√
+
+√
+
+Morocco
+
+√
+
+√
+
+Algeria
+
+√
+
+√
+
+Tunisia
+
+√
+
+√
+
+Libya
+
+√
+
+√
+
+Gambia
+
+√
+
+√
+
+Senegal
+
+√
+
+√
+
+Mauritania
+
+√
+
+√
+
+Mali
+
+√
+
+√
+
+Guinea
+
+√
+
+√
+
+Cote d'Ivoire
+
+√
+
+√
+
+Burkina Faso
+
+√
+
+√
+
+Niger
+
+√
+
+√
+
+Togo
+
+√
+
+√
+
+Benin
+
+√
+
+√
+
+Mauritius
+
+√
+
+√
+
+Liberia
+
+√
+
+√
+
+Sierra Leone
+
+√
+
+√
+
+Ghana
+
+√
+
+√
+
+Nigeria
+
+√
+
+√
+
+Chad
+
+√
+
+√
+
+Central African
+
+√
+
+√
+
+Cameroon
+
+√
+
+√
+
+Cape Verde
+
+√
+
+√
+
+Equatorial Guinea
+
+√
+
+√
+
+Gabon
+
+√
+
+√
+
+Congo
+
+√
+
+√
+
+Zaire
+
+√
+
+Not Support
+
+Angola
+
+√
+
+√
+
+Seychelles
+
+√
+
+√
+
+Rwanda
+
+√
+
+√
+
+Ethiopia
+
+√
+
+√
+
+Somalia
+
+√
+
+√
+
+Djibouti
+
+√
+
+√
+
+Kenya
+
+√
+
+√
+
+Tanzania
+
+√
+
+√
+
+Uganda
+
+√
+
+√
+
+Burundi
+
+√
+
+√
+
+Mozambique
+
+√
+
+√
+
+Zambia
+
+√
+
+√
+
+Madagascar
+
+√
+
+√
+
+Reunion Island
+
+√
+
+√
+
+Zimbabwe
+
+√
+
+√
+
+Namibia
+
+√
+
+√
+
+Malawi
+
+√
+
+√
+
+Lesotho
+
+√
+
+√
+
+Botswana
+
+√
+
+√
+
+Eswatini
+
+√
+
+√
+
+Comoros
+
+√
+
+√
+
+Eritrea
+
+√
+
+√
+
+Vatican
+
+√
+
+√
+
+New Zealand
+
+√
+
+√
+
+Solomon Islands
+
+√
+
+√
+
+Vanuatu
+
+√
+
+√
+
+Australia
+
+√
+
+√
+
+Tonga
+
+√
+
+√
+
+Fiji
+
+√
+
+√
+
+Western Samoa
+
+√
+
+√
+
+ 
+
