@@ -1,0 +1,79 @@
+import puppeteer from 'puppeteer';
+import fs from 'fs';
+
+const html = `
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @page { margin: 15mm 15mm 25mm 15mm; size: A4; }
+  body { margin: 0; padding: 0; background: white; font-family: sans-serif; }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 257mm; /* Altezza A4 meno margini (297 - 15 - 25) */
+    page-break-after: always;
+    box-sizing: border-box;
+    border: 1px solid #eee; /* Solo per visualizzare il confine in debug */
+  }
+
+  .content-area {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  .footer-area {
+    margin-top: auto;
+    padding: 10px 20px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+  <div class="page-container">
+    <div class="content-area">
+      <h1>Pagina 1</h1>
+      <p>Contenuto breve.</p>
+    </div>
+    <div class="footer-area">
+      <div>Manuale DNAKE</div>
+      <div>Pagina 1</div>
+    </div>
+  </div>
+
+  <div class="page-container">
+    <div class="content-area">
+      <h1>Pagina 2</h1>
+      <p>Contenuto che riempie un po' di più...</p>
+      <div style="height: 100mm; background: #fafafa;"></div>
+      <p>Ancora testo.</p>
+    </div>
+    <div class="footer-area">
+      <div>Manuale DNAKE</div>
+      <div>Pagina 2</div>
+    </div>
+  </div>
+
+</body>
+</html>
+`;
+fs.writeFileSync('test_final_layout.html', html);
+
+(async () => {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.goto('file://' + process.cwd() + '/test_final_layout.html', { waitUntil: 'networkidle0' });
+    await page.pdf({
+        path: 'test_final_layout.pdf',
+        format: 'A4',
+        printBackground: true
+    });
+    await browser.close();
+    console.log('Final Test PDF Generated!');
+})();

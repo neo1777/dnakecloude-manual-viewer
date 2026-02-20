@@ -45,31 +45,43 @@ h3 {
 @page {
   size: A4 portrait;
   margin: 15mm 15mm 25mm 15mm;
-}
 
-.page-break {
-  page-break-after: always;
-  break-after: page;
+  @bottom-left {
+    content: "DNAKE Cloud Manual";
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    color: #666;
+  }
+
+  @bottom-right {
+    content: "Pagina " counter(page);
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    color: #666;
+  }
 }
 
 @media print {
   body {
-    background: white;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    background: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
-  a[href]:after {
-    content: none !important;
+  /* Force block layout to avoid slicing */
+  .flex,
+  .grid,
+  [class*="flex-"],
+  [class*="grid-"] {
+    display: block !important;
   }
 
   .page-break {
     margin: 0 !important;
     padding: 0 !important;
-    box-shadow: none !important;
-    border: none !important;
     page-break-after: always !important;
     break-after: page !important;
+    display: block !important;
   }
 
   h1,
@@ -78,14 +90,24 @@ h3 {
   img,
   svg,
   .manual-img {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   p,
   li {
     orphans: 3;
     widows: 3;
+  }
+
+  button,
+  nav,
+  header {
+    display: none !important;
+  }
+
+  a[href]:after {
+    content: none !important;
   }
 }
 
