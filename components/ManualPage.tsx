@@ -10,7 +10,7 @@ interface ManualPageProps {
 
 const ManualPage: React.FC<ManualPageProps> = ({ data }) => {
   return (
-    <div className="flex flex-col relative min-h-[1100px] mb-20 bg-white shadow-2xl mx-auto max-w-[900px] rounded-sm overflow-hidden border border-gray-200 print:shadow-none print:border-none print:mb-0 page-break">
+    <div id={`page-${data.page}`} className="flex flex-col relative min-h-[1100px] mb-20 bg-white shadow-2xl mx-auto max-w-[900px] rounded-sm overflow-hidden border border-gray-200 print:shadow-none print:border-none print:mb-0 page-break">
       <div className="flex-grow p-12 sm:p-16">
         <div className="content mb-12">
           {data.blocks.map((text, idx) => (

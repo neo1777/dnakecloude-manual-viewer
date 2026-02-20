@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.0",
     "mammoth": "^1.11.0",
     "pdf-export-images": "^1.2.0",
     "react": "18.2.0",
