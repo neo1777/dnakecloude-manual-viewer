@@ -42,19 +42,40 @@ h3 {
 }
 
 /* Page Break and Layout */
+@page {
+  size: A4 portrait;
+  margin: 15mm;
+}
+
 .page-break {
   page-break-after: always;
+  break-after: page;
 }
 
 @media print {
   body {
     background: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .page-break {
-    margin-bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
     box-shadow: none !important;
     border: none !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  h1, h2, h3, img, svg, .manual-img {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  p, li {
+    orphans: 3;
+    widows: 3;
   }
 }
 
