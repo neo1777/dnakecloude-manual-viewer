@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @page { 
+    size: A4; 
+    margin: 20mm 15mm 25mm 15mm; 
+  }
+  body { 
+    margin: 0; 
+    font-family: sans-serif; 
+  }
+  
+  /* Footer Fisso */
+  .fixed-footer {
+    position: fixed;
+    bottom: 5mm;
+    left: 15mm;
+    right: 15mm;
+    height: 10mm;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    color: #888;
+    background: white; /* Importante per coprire eventuale testo che scorre sotto */
+  }
+
+  .page-number::after {
+    content: "Pagina " counter(page);
+  }
+
+  .content-block {
+    page-break-after: always;
+    padding: 10mm 0;
+  }
+  
+  .spacer {
+    height: 100mm;
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    margin: 10mm 0;
+  }
+</style>
+</head>
+<body>
+  <div class="fixed-footer">
+    <div>Manuale Utente DNAKE</div>
+    <div class="page-number"></div>
+  </div>
+
+  <div class="content-block">
+    <h1>Capitolo 1</h1>
+    <p>Contenuto corto...</p>
+    <div class="spacer"></div>
+  </div>
+
+  <div class="content-block">
+    <h1>Capitolo 2</h1>
+    <p>Contenuto che occupa spazio...</p>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </div>
+
+  <div class="content-block">
+    <h1>Capitolo 3</h1>
+    <p>Fine manuale.</p>
+  </div>
+</body>
+</html>
