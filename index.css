@@ -42,25 +42,6 @@ h3 {
 }
 
 /* Page Break and Layout */
-@page {
-  size: A4 portrait;
-  margin: 15mm 15mm 25mm 15mm;
-
-  @bottom-left {
-    content: "DNAKE Cloud Manual";
-    font-family: 'Inter', sans-serif;
-    font-size: 10pt;
-    color: #666;
-  }
-
-  @bottom-right {
-    content: "Pagina " counter(page);
-    font-family: 'Inter', sans-serif;
-    font-size: 10pt;
-    color: #666;
-  }
-}
-
 @media print {
   body {
     background: white !important;
@@ -68,73 +49,9 @@ h3 {
     print-color-adjust: exact !important;
   }
 
-  /* Robust A4 Page Logic */
-  .pdf-page-container {
-    display: flex !important;
-    flex-direction: column !important;
-    min-height: 257mm !important;
-    /* Net A4 height */
-    margin: 0 !important;
-    padding: 0 !important;
-    page-break-after: always !important;
-    break-after: page !important;
-    position: relative !important;
-  }
-
-  .pdf-content-area {
-    flex-grow: 1 !important;
-    display: block !important;
-  }
-
-  /* Force block layout ONLY for internal content to avoid slicing */
-  .pdf-content-area>* {
-    display: block !important;
-  }
-
-  .pdf-footer-area {
-    margin-top: auto !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: 100% !important;
-    border-top: 1px solid #eee !important;
-    padding-top: 5mm !important;
-    font-size: 10pt !important;
-    color: #4b5563 !important;
-  }
-
-  /* Progressive Enhancement: Hide DOM footer if Margin Boxes are supported? 
-     Actually, better to use DOM footer as standard and leave Margin Boxes empty or redundant 
-     to avoid complexity. Here we use DOM footer for everyone. */
-
-  .page-break {
-    display: block !important;
-  }
-
-  h1,
-  h2,
-  h3,
-  img,
-  svg,
-  .manual-img {
-    page-break-inside: avoid !important;
-    break-inside: avoid !important;
-  }
-
-  p,
-  li {
-    orphans: 3;
-    widows: 3;
-  }
-
   button,
   nav,
   header {
-    display: none !important;
-  }
-
-  /* Reliable hide utility */
-  .print-hidden {
     display: none !important;
   }
 }
