@@ -68,19 +68,46 @@ h3 {
     print-color-adjust: exact !important;
   }
 
-  /* Force block layout to avoid slicing */
-  .flex,
-  .grid,
-  [class*="flex-"],
-  [class*="grid-"] {
-    display: block !important;
-  }
-
-  .page-break {
+  /* Robust A4 Page Logic */
+  .pdf-page-container {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 257mm !important;
+    /* Net A4 height */
     margin: 0 !important;
     padding: 0 !important;
     page-break-after: always !important;
     break-after: page !important;
+    position: relative !important;
+  }
+
+  .pdf-content-area {
+    flex-grow: 1 !important;
+    display: block !important;
+  }
+
+  /* Force block layout ONLY for internal content to avoid slicing */
+  .pdf-content-area>* {
+    display: block !important;
+  }
+
+  .pdf-footer-area {
+    margin-top: auto !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    border-top: 1px solid #eee !important;
+    padding-top: 5mm !important;
+    font-size: 10pt !important;
+    color: #4b5563 !important;
+  }
+
+  /* Progressive Enhancement: Hide DOM footer if Margin Boxes are supported? 
+     Actually, better to use DOM footer as standard and leave Margin Boxes empty or redundant 
+     to avoid complexity. Here we use DOM footer for everyone. */
+
+  .page-break {
     display: block !important;
   }
 
@@ -106,8 +133,9 @@ h3 {
     display: none !important;
   }
 
-  a[href]:after {
-    content: none !important;
+  /* Reliable hide utility */
+  .print-hidden {
+    display: none !important;
   }
 }
 
