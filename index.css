@@ -41,17 +41,93 @@ h3 {
   background: #a8a8a8;
 }
 
-/* Page Break and Layout */
+/* Page Break and A4 Layout */
+.a4-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.a4-page {
+  width: 210mm;
+  height: 297mm;
+  background-color: white;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: block;
+  transform-origin: top center;
+  transition: transform 0.2s ease;
+}
+
+/* Responsive scaling for A4 pages to fit screen */
+@media screen and (max-width: 820px) {
+  .a4-page {
+    transform: scale(0.85);
+    margin-bottom: -40mm;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .a4-page {
+    transform: scale(0.65);
+    margin-bottom: -100mm;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .a4-page {
+    transform: scale(0.48);
+    margin-bottom: -150mm;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .a4-page {
+    transform: scale(0.40);
+    margin-bottom: -175mm;
+  }
+}
+
 @media print {
-  body {
-    background: white !important;
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  body,
+  html {
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 
+  .a4-container {
+    margin: 0 !important;
+    display: block !important;
+    overflow: visible !important;
+  }
+
+  .a4-page {
+    transform: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    page-break-after: always !important;
+    page-break-inside: avoid !important;
+  }
+
   button,
   nav,
-  header {
+  header,
+  .scroll-to-top {
     display: none !important;
   }
 }

@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Header content={MANUAL_CONTENT} />
-      <div className="min-h-screen bg-gray-100 py-10 print:bg-white print:py-0">
-        <div className="max-w-[1000px] mx-auto print:max-w-none">
+      <div className="pt-20">
+        <div className="max-w-[1000px] mx-auto">
           {MANUAL_CONTENT.map((pageData) => (
             <ManualPage key={pageData.page} data={pageData} />
           ))}

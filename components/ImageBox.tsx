@@ -39,9 +39,9 @@ const ImageBox: React.FC<ImageBoxProps> = ({ images }) => {
 
   if (isIconGrid) {
     return (
-      <div className="flex flex-wrap justify-center items-center gap-3 my-12 w-full px-6 py-4 bg-gray-50/50 rounded-2xl border border-gray-100/50 shadow-inner">
+      <div className="flex flex-wrap justify-center items-center gap-2 my-4 w-full px-4 py-3 bg-gray-50/50 rounded-xl border border-gray-100/50 shadow-inner">
         {images.map((img, idx) => (
-          <div key={`${img}-${idx}`} className="w-[64px] h-[64px] sm:w-[84px] sm:h-[84px] p-1.5 bg-white rounded-xl shadow-sm border border-gray-200/60 flex justify-center items-center overflow-hidden hover:scale-105 transition-transform duration-200">
+          <div key={`${img}-${idx}`} className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] p-1 bg-white rounded-lg shadow-sm border border-gray-200/60 flex justify-center items-center overflow-hidden hover:scale-105 transition-transform duration-200">
             <RenderImage img={img} />
           </div>
         ))}
@@ -51,13 +51,13 @@ const ImageBox: React.FC<ImageBoxProps> = ({ images }) => {
 
   // Grid for screenshots
   let gridCols = 'grid-cols-1';
-  if (count === 2) gridCols = 'grid-cols-1 sm:grid-cols-2';
-  else if (count === 3) gridCols = 'grid-cols-1 md:grid-cols-3';
-  else if (count === 4) gridCols = 'grid-cols-2 lg:grid-cols-4';
-  else if (count >= 5) gridCols = 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4';
+  if (count === 2) gridCols = 'grid-cols-2';
+  else if (count === 3) gridCols = 'grid-cols-3';
+  else if (count === 4) gridCols = 'grid-cols-4';
+  else if (count >= 5) gridCols = 'grid-cols-3';
 
   return (
-    <div className={`grid ${gridCols} gap-8 my-12 w-full items-start justify-items-center px-6`}>
+    <div className={`grid ${gridCols} gap-4 my-6 w-full items-start justify-items-center px-4`}>
       {images.map((img, idx) => (
         <div key={`${img}-${idx}`} className="w-full flex justify-center group">
           <RenderImage img={img} />
