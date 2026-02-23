@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useContext } from 'react';
 import { ManualPage } from '../types';
+import { SearchContext } from '../App';
 
 interface HeaderProps {
   content: ManualPage[];
@@ -10,6 +11,7 @@ const Header: React.FC<HeaderProps> = ({ content }) => {
   const [results, setResults] = useState<{ page: number; text: string }[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const { setSearchQuery } = useContext(SearchContext);
 
   useEffect(() => {
     if (query.length < 2) {
@@ -45,19 +47,40 @@ const Header: React.FC<HeaderProps> = ({ content }) => {
   }, []);
 
   const scrollToPage = (pageNum: number) => {
-    const element = document.getElementById(`page-${pageNum}`);
-    if (element) {
-      const headerOffset = 100;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+    // 1. Set the query first so the <mark> elements render
+    setSearchQuery(query);
     setIsOpen(false);
-    setQuery('');
+
+    // 2. Wait for React to render the <mark> elements
+    setTimeout(() => {
+      const pageElement = document.getElementById(`page-${pageNum}`);
+      if (!pageElement) return;
+
+      // 3. Look for the highlighted <mark> inside this specific page
+      const markElement = pageElement.querySelector('mark');
+
+      const headerOffset = 100; // Account for sticky header
+
+      if (markElement) {
+        // Scroll to the specific highlighted word and center it
+        const elementPosition = markElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset - (window.innerHeight / 3); // Center slightly above middle
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      } else {
+        // Fallback: scroll to the top of the page if no mark found (e.g. image name match)
+        const elementPosition = pageElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 100); // 100ms delay to allow React context propagation
   };
 
   return (
@@ -87,6 +110,7 @@ const Header: React.FC<HeaderProps> = ({ content }) => {
               value={query}
               onChange={(e) => {
                 setQuery(e.target.value);
+                setSearchQuery('');
                 setIsOpen(true);
               }}
               onFocus={() => setIsOpen(true)}
