@@ -38,8 +38,8 @@ export const MANUAL_CONTENT: ManualPage[] = [
             " Property Manager: Messaggi di Sistema, Centro Personale, gestione Appartamenti e Resident, Controllo Accessi (Access Control), Gestione Allarmi, Contact Technical Support, Log degli Eventi."
         ],
         "images": [
-            "images/page_8_img_2.png",
-            "images/page_8_img_3.png"
+            "images/image10.png",
+            "images/image11.png"
         ]
     },
     {
@@ -58,8 +58,12 @@ export const MANUAL_CONTENT: ManualPage[] = [
             " Device"
         ],
         "images": [
-            "images/page_9_img_2.png",
-            "images/page_9_img_3.png"
+            "images/image27.png",
+            "images/image4.png",
+            "images/image5.png",
+            "images/image6.png",
+            "images/image7.png",
+            "images/image8.png"
         ]
     },
     {
@@ -75,7 +79,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             " Access Device Webserver (Accedi al pannello Web del Device)"
         ],
         "images": [
-            "images/page_10_img_3.png"
+            "images/image15.png"
         ]
     },
     {
@@ -94,8 +98,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Setup: Selezionare la license \"Without Indoor Monitor\" quando si crea l'appartamento."
         ],
         "images": [
-            "images/page_11_img_2.png",
-            "images/page_11_img_6.png"
+            "images/image20.png"
         ]
     },
     {
@@ -113,8 +116,9 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Connettività Cloud: I dispositivi si connettono alla propria rete e si registrano al Cloud. Consentono la comunicazione inter-dispositivo anche senza essere nella stessa sottorete LAN, offrendo maggiore flessibilità."
         ],
         "images": [
-            "images/page_12_img_2.png",
-            "images/page_13_img_2.png"
+            "images/image21.png",
+            "images/image22.png",
+            "images/image23.png"
         ]
     },
     {
@@ -127,7 +131,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Remote Management: Permette ai Property Manager di usare l'app Smart Pro per restare connessi anche durante i giri di ispezione, evitando di perdere comunicazioni o chiamate importanti dal citofono."
         ],
         "images": [
-            "images/page_14_img_9.png"
+            "images/image14.png"
         ]
     },
     {
@@ -144,7 +148,8 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Fai clic sull'icona del tuo Account Personale nell'angolo in alto a destra e seleziona 'Logout' per uscire dalla sessione."
         ],
         "images": [
-            "images/page_15_img_2.png"
+            "images/image100.png",
+            "images/image27.png"
         ]
     },
     {
@@ -158,7 +163,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Step 4: Specifica una nuova password rispettando i requisiti di sicurezza. Torna alla pagina di Login e accedi con le tue nuove credenziali."
         ],
         "images": [
-            "images/page_16_img_2.png"
+            "images/image31.png"
         ]
     },
     {
@@ -171,8 +176,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "1. Se desideri modificare la password attuale in autonomia, clicca su \"Change Password\" all'interno del menù Personale e segui le istruzioni."
         ],
         "images": [
-            "images/page_17_img_4.png",
-            "images/page_18_img_6.png"
+            "images/image32.png", "images/image33.png"
         ]
     },
     {
@@ -184,8 +188,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "1. I messaggi di sistema ti arrivano dai membri sovrastanti o sottostanti alla tua gerarchia. Per esempio, se sei un Reseller, riceverai notifiche e messaggi dal Distributor e potrai inoltrare i tuoi a Property Manager e colleghi."
         ],
         "images": [
-            "images/page_19_img_2.png",
-            "images/page_19_img_4.png"
+            "images/image34.png", "images/image35.png", "images/image36.png"
         ]
     },
     {
@@ -204,7 +207,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             " MAC Address: Indirizzo di rete MAC associato in fabbrica."
         ],
         "images": [
-            "images/page_20_img_3.png"
+            "images/image37.png"
         ]
     },
     {
@@ -218,7 +221,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Dopo aver registrato un Reseller/Installer, puoi modificarne le informazioni (Edit), eliminarlo (Delete), ispezionarne i dettagli, inviare nuovamente l'e-mail d'invito o gestirne le License disponibili."
         ],
         "images": [
-            "images/page_21_img_9.png"
+            "images/image104.png"
         ]
     },
     {
@@ -235,8 +238,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Da License Log puoi prendere visione della totalità delle tue license storiche comprate e assegnate."
         ],
         "images": [
-            "images/page_22_img_3.png",
-            "images/page_23_img_2.png"
+            "images/image43.png", "images/image44.png", "images/image45.png"
         ]
     },
     {
@@ -248,8 +250,8 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "La dashboard offre una vista rapida per tenere traccia del numero totale di siti e dispositivi attivi (Device). Offre inoltre scorciatoie operative rapide per avviare la creazione di una nuova Community (condominio) o di un Single-Family (casa singola/villa)."
         ],
         "images": [
-            "images/page_24_img_3.png",
-            "images/page_25_img_2.png"
+            "images/image101.png",
+            "images/image152.png"
         ]
     },
     {
@@ -263,8 +265,8 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Dopo l'avvenuta creazione di un account Property Manager, è possibile modificarlo (Edit), cancellarlo (Delete) o ispezionarne lo storico. Puoi anche decidere di fargli reinviare l'e-mail di benvenuto/registrazione per recuperarne l'accesso."
         ],
         "images": [
-            "images/page_25_img_4.png",
-            "images/page_27_img_2.png"
+            "images/image104.png",
+            "images/image104.png"
         ]
     },
     {
@@ -279,8 +281,8 @@ export const MANUAL_CONTENT: ManualPage[] = [
             " Remote Management: Se attivata, la portineria o sicurezza potrà gestire le postazioni esterne videocitofoniche (Villa Station/Door Station) dei residenti configurate come varco e accedere non solo a quest'ultime, ma fungere da \"posto interno da passeggio\"."
         ],
         "images": [
-            "images/page_29_img_2.png",
-            "images/page_30_img_3.png"
+            "images/image102.png",
+            "images/image102.png"
         ]
     },
     {
@@ -292,8 +294,8 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Con la Community ora prodotta, cliccandola, ci si tuffa nel gestore vero e proprio dei nodi (Site management page), degli appartmenti (Apartments) e dei device annessi per quel condominio."
         ],
         "images": [
-            "images/page_31_img_29.png",
-            "images/page_32_img_2.png"
+            "images/image103.png",
+            "images/image112.png"
         ]
     },
     {
@@ -308,13 +310,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Step 1: Ritorna a Site Management, seleziona \"New Building\", poi selezionale per aggiungere appartamenti (Add Apartment).",
             "Step 2: Si aprirà un modulo di assegnazione di Apartmet Number (n° dell'interno/stanza) e la selezione della License essenziale."
         ],
-        "images": [
-            "images/page_5_img_2.png",
-            "images/page_6_img_2.png",
-            "images/page_6_img_3.png",
-            "images/page_6_img_4.png",
-            "images/page_7_img_2.png"
-        ]
+        "images": ["images/image105.png", "images/image106.png", "images/image107.png"]
     },
     {
         "page": 21,
@@ -329,9 +325,9 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Step 3: Clicca sul pulsante Details dell'appartamento e l'apposito Codice QR da scaricare verrà esposto e manifestato a video. Stampa e distribuiscilo ai residenti!"
         ],
         "images": [
-            "images/page_33_img_3.png",
-            "images/page_35_img_2.png",
-            "images/page_35_img_3.png"
+            "images/image113.png",
+            "images/image115.png",
+            "images/image116.png"
         ]
     },
     {
@@ -344,8 +340,8 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Si differenzia dalla comunità per una gestione centralizzata al Single-Family in cui Area per l'hardware del perimetro si fonde con Resident. Usa Add Single-Family per compilarne lo scheletro in egual misura a come operato nella Community Mode."
         ],
         "images": [
-            "images/page_36_img_4.png",
-            "images/page_37_img_2.png"
+            "images/image143.png",
+            "images/image112.png"
         ]
     },
     {
@@ -360,8 +356,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Essenziale in attività come il Servizio Guasti (RMA). Permesso unicamente per medesimo modello prodotto, in Device colonna usa \"Replace Device\". Digita il nuovo MAC Address vergine e la rete. I dati pre-esistenti affluiranno automaticamente dal backup in Cloud al rimpiazzo appena quest'ultimo annuncerà on-line il suo stato."
         ],
         "images": [
-            "images/page_37_img_3.png",
-            "images/page_38_img_2.png"
+            "images/image81.png", "images/image83.png"
         ]
     },
     {
@@ -377,7 +372,7 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "6 Property Manager"
         ],
         "images": [
-            "images/page_39_img_2.png"
+            "images/image109.png", "images/image110.png", "images/image108.png"
         ]
     },
     {
@@ -393,9 +388,9 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Synchronize all residents' data (Sincronizza rubrica residenti): Se i nomi non figurano immediatamente scesi sulle pulsantiere, forzane la sincronia su questo tasto. Tutte le modifiche video/privacy apportabili a specifici residenti sono fuse inoltre in Resident Details, che offre riassunti gerarchici Unit/Apartment e opzioni per servizi Video o Landline abilitabili centralmente."
         ],
         "images": [
-            "images/page_40_img_2.png",
-            "images/page_41_img_2.png",
-            "images/page_42_img_2.png"
+            "images/image111.png",
+            "images/image112.png",
+            "images/image38.png", "images/image39.png", "images/image40.png"
         ]
     },
     {
@@ -410,8 +405,15 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "I tasti Import Residents/Cards prevedono lo scaricamento di un Template Excel/CSV per farti incollare grandissimi flussi di locatari senza farli a mano 1 ad 1. Per effettuare salvataggi dei dati in locale su PC si userà il tasto gemello Export All Residents."
         ],
         "images": [
-            "images/page_43_img_2.png",
-            "images/page_44_img_2.png"
+            "images/image117.png",
+            "images/image118.png",
+            "images/image119.png",
+            "images/image120.png",
+            "images/image121.png",
+            "images/image122.png",
+            "images/image123.png",
+            "images/image124.png",
+            "images/image125.png"
         ]
     },
     {
@@ -427,7 +429,8 @@ export const MANUAL_CONTENT: ManualPage[] = [
             " Accesso Libero (Free Access): Una funzione \"Sempre aperto\" che disabilita i controlli in determinate fasce per permettere il transito a tutta la popolazione specificata nei Device legati al Rule."
         ],
         "images": [
-            "images/page_45_img_2.png"
+            "images/image139.png",
+            "images/image139.png"
         ]
     },
     {
@@ -443,7 +446,9 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Tale portale in My Message si tramuta in Posta Elettronica nativa di broadcasting: avvisare i 60 condòmini dell'arrivo dello spazzacamino la martedì è materia di un singolo Broadcast inviato massivamente ai loro Smart Pro App accounts!"
         ],
         "images": [
-            "images/page_46_img_2.png"
+            "images/image136.png", "images/image137.png", "images/image138.png", "images/image140.png",
+            "images/image142.png", "images/image144.png", "images/image149.png", "images/image150.png", "images/image151.png",
+            "images/image145.png", "images/image146.png", "images/image147.png", "images/image148.png"
         ]
     },
     {
@@ -458,7 +463,8 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "URL di Riferimento in Base alla geolocalizzazione dei servizi acquistanti (e Account App installatrice corrispondente):"
         ],
         "images": [
-            "images/page_48_img_3.png"
+            "images/image153.png", "images/image154.png", "images/image155.png",
+            "images/image153.png"
         ]
     },
     {
@@ -472,9 +478,6 @@ export const MANUAL_CONTENT: ManualPage[] = [
             "Regione designata all'Oriente.",
             "Nota SIP App: Le nazioni e country code validati per le licenze P2P e PBX SIP o Landline sono globalmente listati a back-end, si prega di verificare la conformità tramite proprio delegato Distributore."
         ],
-        "images": [
-            "images/page_49_img_2.png",
-            "images/page_50_img_2.png"
-        ]
+        "images": []
     }
 ];
